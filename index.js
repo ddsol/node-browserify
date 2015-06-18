@@ -24,6 +24,9 @@ var resolve = require('resolve');
 
 var readonly = require('read-only-stream');
 
+//fs.readFile fix
+require('./lib/readfilefix.js');
+
 module.exports = Browserify;
 inherits(Browserify, EventEmitter);
 
